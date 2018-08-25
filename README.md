@@ -15,7 +15,7 @@ install dependencies & build style/js
 start server by nodemon
 
     node_modules/.bin/nodemon server/app.js
-or (*if the node is globally*)
+or (*if the nodemon is globally*)
 
     nodemon server/app.js
     
