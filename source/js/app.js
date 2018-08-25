@@ -1,10 +1,43 @@
+function prepareSendMail(e) {
+    e.preventDefault();
+    const data = {
+        name: formMail.name.value,
+        email: formMail.email.value,
+        text: formMail.text.value
+    };
 
-import { square, MyClass } from './module';
+    let resultContainer = formMail.querySelector('.status');
+    resultContainer.innerHTML = 'Sending...';
 
-console.log(square(5));
-var cred = {
-  name: 'Юрий Кучма',
-  enrollmentNo: 11115078
-};
-var x = new MyClass(cred);
-console.log(x.getName());
+    sendJson('/', data, 'POST', (data) => {
+        formMail.reset();
+        resultContainer
+            .classList
+            .remove('badge-danger')
+        if (data.status == 'Error') {
+            resultContainer
+                .classList
+                .add('badge-danger')
+        }
+        resultContainer.innerHTML = data.msg;
+    });
+}
+
+function sendJson(url, data, method, cb) {
+    let xhr = new XMLHttpRequest();
+    xhr.open(method, url, true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onload = function (e) {
+        let result;
+        try {
+            result = JSON.parse(xhr.responseText);
+        } catch (e) {
+            cb({msg: 'Извините в данных ошибка', status: 'Error'});
+        }
+        cb(result);
+    };
+    xhr.send(JSON.stringify(data));
+}
+
+const formMail = document.querySelector('#mail');
+formMail.addEventListener('submit', prepareSendMail);

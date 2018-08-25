@@ -8,6 +8,9 @@ const session = require('express-session');
 app.set('views', path.join(__dirname, '../source/template'));
 app.set('view engine', 'pug');
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
+
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.use('/', require('./routes'));
