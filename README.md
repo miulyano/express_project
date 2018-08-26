@@ -22,3 +22,11 @@ or (*if the nodemon is globally*)
 or by node
 
     node server/app.js
+    
+test email
+
+    testnodejscourse@gmail.com / testnodejscourse123456
+
+test user
+
+    admin / admin
