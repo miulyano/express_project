@@ -1,5 +1,6 @@
 .product {
   padding-top: 70px;
+  padding-bottom: 70px;
 }
 .product__list {
   margin: 0;
@@ -7,9 +8,8 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-content: space-between;
-  min-height: 1280px;
 }
 
 .product__item {
@@ -21,6 +21,10 @@
   &:hover .product__hover {
     opacity: 1;
   }
+}
+
+.product__item:not(:nth-child(3n)) {
+  margin-right: 23px;
 }
 
 .product__img {

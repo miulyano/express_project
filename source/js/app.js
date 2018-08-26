@@ -7,7 +7,7 @@ function prepareSendMail(e) {
   };
 
   let resultContainer = formMail.querySelector('.status');
-  resultContainer.innerHTML = 'Sending...';
+  resultContainer.innerHTML = 'Отправка...';
 
   sendJson('/', data, 'POST', (data) => {
     formMail.reset();

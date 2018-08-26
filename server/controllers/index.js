@@ -1,3 +1,7 @@
+const db = require('../models/db');
+
 module.exports.getIndex = function (req, res) {
-    res.render('pages/index');
+    const products = db.getState().products || [];
+    const skills = db.getState().skills || [];
+    res.render('pages/index', {products: products, skills: skills});
 };
