@@ -9,12 +9,14 @@ clone a project to a local machine
 
 install dependencies & build style/js
    
+    cd express_project
     npm i
     npm run build
 
 start server by nodemon
 
     node_modules/.bin/nodemon server/app.js
+    
 or (*if the nodemon is globally*)
 
     nodemon server/app.js
