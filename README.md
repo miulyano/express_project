@@ -30,3 +30,7 @@ test email
 test user
 
     admin / admin
+
+if you want to overwrite login and password values user
+
+    node server/models/addAdmin.js
