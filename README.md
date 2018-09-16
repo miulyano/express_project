@@ -9,7 +9,7 @@
 $ git clone https://github.com/morecodemore/express_project.git
 ```
 
-install *dependencies* & build *style/js*:
+**install *dependencies* & build *style/js*:**
 ```bash  
 $ cd express_project
 $ npm i
