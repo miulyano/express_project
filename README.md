@@ -4,8 +4,9 @@
 #### The project launch command:
 
 clone a project to a local machine
-
-    git clone https://github.com/morecodemore/express_project.git
+```bash
+git clone https://github.com/morecodemore/express_project.git
+```
 
 install dependencies & build style/js
    
