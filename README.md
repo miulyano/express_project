@@ -4,7 +4,7 @@
 
 ## The project launch command:
 
-clone a project to a local machine:
+**clone a project to a local machine:**
 ```bash
 $ git clone https://github.com/morecodemore/express_project.git
 ```
