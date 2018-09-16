@@ -5,35 +5,44 @@
 
 clone a project to a local machine
 ```bash
-git clone https://github.com/morecodemore/express_project.git
+$ git clone https://github.com/morecodemore/express_project.git
 ```
 
 install dependencies & build style/js
-   
-    cd express_project
-    npm i
-    npm run build
+```bash  
+cd express_project
+npm i
+npm run build
+```
 
 start server by nodemon
-
-    node_modules/.bin/nodemon server/app.js
+```bash
+node_modules/.bin/nodemon server/app.js
+```
     
 or (*if the nodemon is globally*)
-
-    nodemon server/app.js
+```bash
+nodemon server/app.js
+```
     
 or by node
-
-    node server/app.js
+```
+node server/app.js
+```
     
 test email
-
-    testnodejscourse@gmail.com / testnodejscourse123456
+```bash
+testnodejscourse@gmail.com / testnodejscourse123456
+```
 
 test user
 
-    admin / admin
+```bash
+admin / admin
+```
 
 if you want to overwrite login and password values user
 
-    node server/models/addAdmin.js
+```bash
+ node server/models/addAdmin.js
+ ```
