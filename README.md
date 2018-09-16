@@ -40,5 +40,5 @@ test **User**: `admin / admin`
 if you want to overwrite *login* and *password* values **User**:
 
 ```bash
-node server/models/addAdmin.js
+$ node server/models/addAdmin.js
 ```
