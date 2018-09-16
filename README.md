@@ -16,6 +16,7 @@ $ cd express_project
 $ npm i
 $ npm run build
 ```
+---
 
 start server by [***Nodemon***](https://nodemon.io):
 ```bash
