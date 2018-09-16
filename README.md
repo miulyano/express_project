@@ -18,17 +18,12 @@ $ npm run build
 ```
 ---
 
-start server by [***Nodemon***](https://nodemon.io):
+start dev server by [***Nodemon***](https://nodemon.io):
 ```bash
-$ node_modules/.bin/nodemon server/app.js
+$ npm run dev
 ```
     
-or (*if the **Nodemon** is globally*):
-```bash
-$ nodemon server/app.js
-```
-    
-or by node:
+or production mode:
 ```
 $ node server/app.js
 ```
