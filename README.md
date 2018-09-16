@@ -3,7 +3,6 @@
 
 
 ## The project launch command:
----
 
 clone a project to a local machine:
 ```bash
@@ -33,7 +32,7 @@ or by node:
 ```
 $ node server/app.js
 ```
-    
+---
 test **Email**: *`testnodejscourse@gmail.com / testnodejscourse123456`*
 
 test **User**: `admin / admin`
