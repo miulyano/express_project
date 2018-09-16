@@ -23,7 +23,7 @@ start server by [***Nodemon***](https://nodemon.io):
 $ node_modules/.bin/nodemon server/app.js
 ```
     
-or (*if the nodemon is globally*):
+or (*if the **Nodemon** is globally*):
 ```bash
 $ nodemon server/app.js
 ```
